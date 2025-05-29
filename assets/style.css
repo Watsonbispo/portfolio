@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     }
+
     html{font-size: 62.5%;
-    scroll-behavior: smooth;}
+    scroll-behavior:smooth;}
+    
     body{font-family:'Open Sans', sans-serif;
-    font-size: 1.6rem;}
+    font-size: 1.6rem;
+    height:100%;}
     
     h1{font-size: 6rem;}
     h2{font-size: 5.5rem;}
@@ -42,6 +45,7 @@
     .menu h1{text-transform: uppercase;
     font-size: 23px;
     padding:15px }
+
     .menu{
         display: flex;
         justify-content: space-between;
@@ -56,7 +60,7 @@
     
     .menu nav ul li a{
         color: rgb(0, 0, 0);
-        padding: 22px;
+        padding: 18px;
         font-size: 18px;
         display: block;
         text-decoration: none;
@@ -70,15 +74,16 @@
             position: absolute;
             bottom: 12px;
             left: 50%;
-            height: 1.5px;
+            right:50%;
+            height: 1.9px;
             width: 0%;
             transition: ease-in-out 300ms;
             background-color: crimson;
         }
     
         .menu nav ul li a:hover:after{
-            width: 75%;
-            left: 19%;
+            width: 69%;
+            left: 17%;
     
         }
         .space{
@@ -182,9 +187,10 @@
 
                 .gallery h2{
                 color: rgb(245, 245, 245);
-                font-size: 6rem;
+                font-size: 5rem;
                 text-transform: uppercase;
-                padding: 8.5rem 0rem 2.6rem 0rem;}
+                padding: 8.5rem 0rem 2.6rem 0rem;
+                text-align: center;}
 
                 .gallery{
                     min-height: 100vh;
@@ -241,7 +247,6 @@
                 }
 
                 .text-contact h2{
-                    padding-left: 6.7rem;
                     padding-bottom: 4.5rem;
                     color: rgb(255, 255, 255);
                     text-transform: uppercase;}
@@ -251,18 +256,22 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    align-items: center;
                 }
                 .contact{background-image:url(./img/confetti-doodles\ \(2\).svg);
                     min-height: 100vh;}
 
-                .img-contato{padding-left: 3rem;}    
+                .img-contato{padding-left: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;}    
 
                 .img-contato img{
-                 max-width: 100%;
-                 max-height: auto;
-                 height: 540px;
-                 width: 690px;
-
+                padding-bottom: 50px;
+                max-width: 100%;
+                max-height: auto;
+                height: 540px;
+                width: 690px;
                 }
                
                 .contato{ 
@@ -319,7 +328,8 @@
             .logomoba{
                 display: none;
             }
-            
+
+
             @media (max-width:800px) 
         {
 
@@ -368,7 +378,7 @@
 
             .close-menu:checked~.botaum::after{
                 content:'✕';
-                color: rgb(17, 17, 41);
+                color: rgb(255, 255, 255);
                 background-color: white;
             }
 
@@ -387,8 +397,8 @@
             }
 
             .botaum::after{
-                top: 1rem;
-                right: 1rem;
+                top: 1.3rem;
+                right: 1.2rem;
                 cursor: pointer;
                 content:'☰';
                 color: white;
@@ -488,7 +498,25 @@
                     display: flex;
                     flex-direction: column;
                   }
-
             }
+
+                
+            @media (max-width:450px){
+                
+                .gallery p{
+                    padding-left:25px;
+                }
+
+                .gallery h2{
+                    margin-right:20px;
+                }
+
+                .textSM{
+                    width:80%;
+                }
+            }
+            
+
+
 
          
